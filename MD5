@@ -1,13 +1,13 @@
-7756b9419983f93353256bd485524e04 *DESCRIPTION
+d3574b4cea9b1e7d8b6b71b19c85ef16 *DESCRIPTION
 80707f14a71e687837c8ced7ca37967d *NAMESPACE
-8af168053495671a77e88412be5d6c70 *R/BorderAnalysisFun.R
+13a6a5bc340108c4090be6e63c41ff80 *R/BorderAnalysisFun.R
 1114c3586996f4fbea830a2683d0b717 *R/BorderAnalysisMiscFun.R
-853999347ff788f480c6f3c2888b8fa3 *build/partial.rdb
+31bd56d50451837e324221620087f969 *build/partial.rdb
 1425bef7858c0576663e4afec108ed1e *data/dataExample.RData
 b94c3f116968bafcdd9c819528cd71be *inst/extdata/BEAF32_Kc167_CS_dm3.bed
 96de0e7fde577b1f2e987726f5a977e9 *inst/extdata/TAD_Corces_1kb_type_p1.bed
 601cf6f7b037e2ad195a336093614219 *man/HiCfeat-internal.Rd
-86327547024d8806fa79e1b0dfc5f4c7 *man/HiCfeat-package.Rd
+7d109c1741b9c38ec4bbe7b7413e740a *man/HiCfeat-package.Rd
 b73040f50491833a7bb03415df57229a *man/borderAnalysisFun.Rd
 be8bdd3b938692153cb3e34288968b8f *man/dataExample.Rd
 d2c9d6c881cd3c3788809a5fd2ca5645 *man/readDomBed.Rd

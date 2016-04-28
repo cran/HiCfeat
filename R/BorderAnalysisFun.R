@@ -77,10 +77,11 @@ binMat.GR=GRanges(seqnames=binMat[,1],IRanges(start=as.numeric(binMat[,2]),end=a
 seqinfo(binMat.GR)=seqInfoChr
 olBinBorders=findOverlaps(binMat.GR,Borders.GR)
 binMat.GR$Border=rep(0,length(binMat.GR))
-binMat.GR$Border[queryHits(olBinBorders)]=1
+#binMat.GR$Border[queryHits(olBinBorders)]=1
+binMat.GR$Border[as.data.frame(olBinBorders)[[1]]]=1
 binMat.GR$BorderType=rep("NB",length(binMat.GR))
-binMat.GR$BorderType[queryHits(olBinBorders)]=Borders.GR[subjectHits(olBinBorders)]$BorderType
-
+#binMat.GR$BorderType[queryHits(olBinBorders)]=Borders.GR[subjectHits(olBinBorders)]$BorderType
+binMat.GR$BorderType[as.data.frame(olBinBorders)[[1]]]=Borders.GR[as.data.frame(olBinBorders)[[2]]]$BorderType
 
 # Annotate borders
 binMat.Mat=NULL
