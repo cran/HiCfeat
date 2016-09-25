@@ -14,5 +14,5 @@ Raphael Mourad
 Maintainer: Raphael Mourad, raphael.mourad@ibcg.biotoul.fr
 }
 \references{
-Raphael Mourad and Olivier Cuvier. Computational identification of genomic features that influence 3D chromatin domain formation, accepted in PLOS Computational Biology.
+Raphael Mourad and Olivier Cuvier. Computational identification of genomic features that influence 3D chromatin domain formation, PLOS Computational Biology, 12(5):e1004908.
 }

@@ -3,6 +3,7 @@ import("GenomicRanges")
 import("Matrix")
 import("glmnet")
 import("rtracklayer")
+import("methods")
 
 importFrom("IRanges", "IRanges", "IRangesList", "breakInChunks","Views","RleViewsList","viewMeans")
 importFrom("GenomeInfoDb", "seqlengths", "seqlevels", "seqlevels<-")

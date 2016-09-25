@@ -10,7 +10,7 @@ This is the main function. This function estimates the influences of genomic fea
 \usage{
 borderAnalysisFun(genomicFeatureList.GR, GFDataType, annotNames, domains.GR, 
 		  			seqInfoChr, analysisMode, binSize, borderSize, 
-					LRT, interactionTerms, testBorderType, verbose)
+					LRT, interactionTerms, verbose)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
@@ -46,9 +46,6 @@ If TRUE, a likelihood ratio test is used to assess the significance of beta para
   \item{interactionTerms}{
 A character vector InteractionTerms that contains the interaction terms between the genomic features. For instance, if there are two genomic features "F1" and "F2", the user can add the interaction term "F1:F2" in the same manner as in an lm or glm object.
 }
-  \item{testBorderType}{
-If there is a fourth column in the domain bed file that contains annotation about each domain, then testBorderType can be set to TRUE. If testBorderType = TRUE, then enrichment will be evaluated for each type of borders (for instance: active-active, active-PcG,...). By default, testBorderType = FALSE.
-}
   \item{verbose}{
 If verbose = TRUE, then each step of the method is printed. By default, verbose = FALSE.
 }
@@ -81,6 +78,6 @@ print("Multiple logistic regression estimated by maximum likelihood")
 BA_res=borderAnalysisFun(genomicFeatureList.GR=dataExample$GenomicFeatureList.GR,
 	GFDataType="bed",annotNames=dataExample$AnnotNames,domains.GR=dataExample$Domains.GR,
 	seqInfoChr=dataExample$SeqInfoChr,analysisMode="MLR",binSize=500,borderSize=5e3,
-	LRT=FALSE,interactionTerms="",testBorderType=FALSE,verbose=FALSE)
+	LRT=FALSE,interactionTerms="",verbose=FALSE)
 
 }
