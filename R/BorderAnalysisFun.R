@@ -75,10 +75,10 @@ for(i in 1:length(genomicFeatureList.GR)){
  }
 
  binMati=averagePerBin(genomicFeatureList.GR[[i]],binSize,"score")
- binMat.Mat=as(cBind(binMat.Mat,binMati),"Matrix")
+ binMat.Mat=as(cbind(binMat.Mat,binMati),"Matrix")
  if(verbose){print(paste0(annotNames[i]," annotated"))}
 }
-binMat.Mat=cBind(binMat.GR$Border,binMat.Mat)
+binMat.Mat=cbind(binMat.GR$Border,binMat.Mat)
 colnames(binMat.Mat)<-c("Border",annotNames)
 
 # Compute correlations among genomic features

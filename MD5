@@ -1,8 +1,8 @@
-edec2ff238240e8bf2514679e1960b50 *DESCRIPTION
+264f0b0a18089ba40014367925bd90ce *DESCRIPTION
 3e4f3ce4f7ba512f6b9e7ca6954f9e18 *NAMESPACE
-ec1743b53263ae6591055f4037537354 *R/BorderAnalysisFun.R
+08df36c6b6b72741cb0e4b15b82aba4d *R/BorderAnalysisFun.R
 1114c3586996f4fbea830a2683d0b717 *R/BorderAnalysisMiscFun.R
-3c4549688c393f4a143c9b59c4ebda7e *build/partial.rdb
+03b192dca5824922c2a8fdf06ef9a1c2 *build/partial.rdb
 1425bef7858c0576663e4afec108ed1e *data/dataExample.RData
 b94c3f116968bafcdd9c819528cd71be *inst/extdata/BEAF32_Kc167_CS_dm3.bed
 96de0e7fde577b1f2e987726f5a977e9 *inst/extdata/TAD_Corces_1kb_type_p1.bed
