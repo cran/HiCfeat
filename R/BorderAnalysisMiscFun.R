@@ -122,7 +122,7 @@ averagePerBin <- function(x, binsize, mcolname)
  if(!is(x, "GenomicRanges")){stop("'x' must be a GenomicRanges object")}
  if(any(is.na(seqlengths(x)))){stop("'seqlengths(x)' contains NAs")}
 
- bins <- IRangesList(lapply(seqlengths(x),function(seqlen)IRanges(breakInChunks(seqlen, binsize))))
+ bins <- IRangesList(lapply(seqlengths(x),function(seqlen)IRanges(breakInChunks(totalsize=seqlen, chunksize=binsize))))
 
  cvg <- coverage(x, weight=mcolname)
 
